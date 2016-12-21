@@ -1,0 +1,16 @@
+Step to run application
+
+1) Clone this repo
+2) Run 'npm install'
+3) Edit .env file and set appropriate values for your MongoDB installation
+4) Run 'npm start'
+5) Point your browser to http://localhost:3000
+
+Available routes
+
+/business 
+	GET A list of 20 random businesses sorted by name
+/business/:business_id 
+	GET Details for a given business_id along with its associated reviews
+/facets
+	GET Facet output by categories, stars, and price range
