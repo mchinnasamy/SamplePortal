@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var business = require('./routes/business');
 var facets = require('./routes/facets');
+var graph = require('./routes/graph');
 
 var app = express();
 
@@ -26,8 +27,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/business', business);
-app.use('/facets', facets);
+app.use('/api/v1/business', business);
+app.use('/api/v1/facets', facets);
+app.use('/api/v1/graph', graph);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

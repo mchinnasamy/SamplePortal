@@ -2,12 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var mc = require('mongodb').MongoClient;
+var config = require('../config/config');
 
-var MONGO_HOST = process.env.MONGO_HOST
-var MONGO_PORT = process.env.MONGO_PORT
-var MONGO_DB = process.env.MONGO_DB
-
-var url = 'mongodb://' + MONGO_HOST + ':' + MONGO_PORT + '/' + MONGO_DB;
+var url = config.url;
 var coll = 'business';
 
 /* GET business listings. */

@@ -1,16 +1,20 @@
-Step to run application
+Steps to run application
+========================
 
 1) Clone this repo
 2) Run 'npm install'
 3) Edit .env file and set appropriate values for your MongoDB installation
+   Defaults to localhost:27017/yelp
 4) Run 'npm start'
 5) Point your browser to http://localhost:3000
 
 Available routes
 
-/business 
+/api/v1/business 
 	GET A list of 20 random businesses sorted by name
-/business/:business_id 
+/api/v1/business/:business_id 
 	GET Details for a given business_id along with its associated reviews
-/facets
+/api/v1/facets
 	GET Facet output by categories, stars, and price range
+/api/v1/graph/:userId
+	GET social graph output for given userId
