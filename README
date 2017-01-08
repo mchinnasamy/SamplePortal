@@ -2,11 +2,12 @@ Steps to run application
 ========================
 
 1) Clone this repo
-2) Run 'npm install'
-3) Edit .env file and set appropriate values for your MongoDB installation
+2) cd SamplePortal
+3) Run 'npm install'
+4) Edit .env file and set appropriate values for your MongoDB installation
    Defaults to localhost:27017/yelp
-4) Run 'npm start'
-5) Point your browser to http://localhost:3000
+5) Run 'npm start'
+6) Point your browser to http://localhost:3000
 
 Available routes
 
